@@ -4,210 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishwaratna Foundation</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero-slider {
-            position: relative;
-            overflow: hidden;
-            max-height: 400px;
-        }
-        .slides {
-            display: flex;
-            width: 300%;
-            animation: slide 15s infinite;
-        }
-        .slides img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            33% { transform: translateX(-100%); }
-            66% { transform: translateX(-200%); }
-            100% { transform: translateX(0); }
-        }
-        nav {
-            background-color: #0074cc;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #004aad;
-            margin-top: 2rem;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        .division img, .campaign img, .office img {
-            max-width: 100%;
-            height: auto;
-            margin: 1rem 0;
-            border-radius: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 0.5rem;
-            text-align: left;
-        }
-        footer {
-            background-color: #004aad;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: 'Baloo 2', cursive; background:#f8f9fa; color:#333; line-height:1.7; }
+        header { position:relative; text-align:center; color:white; }
+        .hero { position:relative; width:100%; max-height:500px; overflow:hidden; }
+        .hero img { width:100%; height:500px; object-fit:cover; display:block; }
+        header h1 { position:absolute; top:40%; left:50%; transform:translate(-50%, -50%); font-size:3rem; background:rgba(0,0,0,0.5); padding:1rem 2rem; border-radius:10px; }
+        header p { position:absolute; top:60%; left:50%; transform:translate(-50%, -50%); font-size:1.2rem; background:rgba(0,0,0,0.4); padding:0.5rem 1rem; border-radius:8px; }
+
+        nav { background:#0074cc; display:flex; justify-content:center; flex-wrap:wrap; padding:0.5rem 0; }
+        nav a { color:white; text-decoration:none; margin:0.5rem 1rem; font-weight:600; transition:0.3s; }
+        nav a:hover { color:#ffd700; }
+
+        section { max-width:1000px; margin:auto; padding:2rem 1rem; }
+        section h2 { color:#0074cc; margin-bottom:1rem; border-bottom:2px solid #0074cc; display:inline-block; padding-bottom:0.2rem; }
+        h3 { margin-top:1.5rem; color:#004aad; }
+        p { margin:0.5rem 0; }
+        ul { margin:0.5rem 0 1rem 1.5rem; }
+        footer { background:#004aad; color:white; text-align:center; padding:1rem 0; margin-top:2rem; }
+
+        /* Responsive */
+        @media(max-width:768px){
+            header h1 { font-size:2rem; padding:0.5rem 1rem; }
+            header p { font-size:1rem; padding:0.3rem 0.5rem; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="hero-slider">
-        <div class="slides">
-            <img src="images/cover1.jpg" alt="Vishwaratna Foundation Event 1">
-            <img src="images/cover2.jpg" alt="Vishwaratna Foundation Event 2">
-            <img src="images/cover3.jpg" alt="Vishwaratna Foundation Event 3">
-        </div>
+    <div class="hero">
+        <img src="images/ngo_cover1.jpg" alt="Vishwaratna Foundation">
+        <h1>विश्वरत्न फाउंडेशन</h1>
+        <p>धर्मनिरपेक्ष, पक्षनिरपेक्ष व्यासपीठ सर्वसामान्य लोकांसाठी</p>
     </div>
-    <h1>Vishwaratna Foundation</h1>
-    <p>धर्मनिरपेक्ष, पक्षनिरपेक्ष व्यासपीठ सर्वसामान्य लोकांसाठी</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
     <a href="#divisions">Divisions</a>
-    <a href="#campaigns">Campaigns</a>
     <a href="#offices">Offices</a>
-    <a href="#executive">Executive Committee</a>
+    <a href="#executive">Executive</a>
 </nav>
 
 <section id="about">
     <h2>About Vishwaratna Foundation</h2>
-    <p>भारतीय राज्यघटनेचे शिल्पकार बोधीसत्व प.पू. डॉ. भीमराव रामजी आंबेडकर म्हणजे जागतिक मनाचा मानबिंदू...</p>
-    <p>६ डिसेंबर १९५६ रोजी मा. डॉ. बाबासाहेब आंबेडकर यांच्या मृत्यूनंतर...</p>
-    <img src="images/about_foundation.jpg" alt="Vishwaratna Foundation">
+    <p>भारतीय राज्यघटनेचे शिल्पकार बोधीसत्व प.पू. डॉ. भीमराव रामजी आंबेडकर म्हणजे जागतिक मनाचा मानबिंदू, स्वतंत्र भारताचे पहिले कायदामंत्री, महिलांच्या हक्कासाठी मांडलेले हिंदू कोड बिल पास न झाल्यामुळे आपल्या मंत्री पदाचा राजीनामा दिला. भारतीय अर्थव्यवस्थेच्या विकासाचा पाया घालणारे, भारतामध्ये न्याय, समता, स्वातंत्र्य, बंधुता याचे जाळे विणणारे, संविधानाच्या माध्यमातून तळीगाळातील समाजाला त्याच्या मूलभूत हक्क आणि कर्तव्याचे लोकशाही मार्गाचे भान देणारे, हजारो वर्षांच्या पासून गुलामीचे जीवन जगणाऱ्या विशिष्ट वर्गाला, त्या गुलामीच्या जोखडातून मुक्त करणारे महामानव, समाज उद्धारक देशाच्या राजकारणात, समाजकारणात देखील जेव्हा, जेव्हा आर्थिक समस्या उद्भवली तेव्हा प्रत्येक वेळी स्थिती सक्षमपणे सांभाळून देशाच्या स्थैर्यात महत्त्वाची भूमिका निभावणारे आणि भारताचे जागतिक पातळीवर सर्वसामान्य जनतेचे प्रतिनिधित्व, नेतृत्व करणारे व राष्ट्रीय राजकारणाला नवी दिशा देणारे द्रष्टे नेते.</p>
+    <p>६ डिसेंबर १९५६ रोजी मा. डॉ. बाबासाहेब आंबेडकर यांच्या मृत्यूनंतर (त्यांचे कार्य पूर्णत्वास नेण्यासाठी साहेबांचे अनुयायी सद्गद अंतकरणाने एकत्र आले. म्हणूनच डॉ. आंबेडकरांच्या मृत्यूनंतर ४६ वर्षांनी) आणि २८ डिसेंबर २००२ रोजी मांडवा येथे 'विश्वरत्न फाउंडेशन'ची स्थापना झाली.</p>
+    <p>विश्वरत्न फाउंडेशन हे धर्मनिरपेक्ष, पक्षनिरपेक्ष सामान्य लोकांनी सर्वसामान्य लोकांसाठी निर्माण केलेले व्यासपीठ आहे. महाराष्ट्रातील सर्वसामान्य, तळीगाळातील माणसाला सतावणान्या प्रश्नांचा खल करावा आणि त्या चर्चेतून निष्ठावंत कार्य करणारे (कार्यकर्ते) माणूस तयार व्हावे ही फाउंडेशनची भूमिका आहे. या राकट, कणखर दगडांच्या देशाचा स्वाभिमान देशातच नव्हे तर जागतिक पातळीवर सुद्धा अभंग रहावा हीच सर्वसामान्य माणसाची इच्छा आहे. विश्वरत्न फाउंडेशनचा दोन दशकांचा प्रवास हा या आकांक्षाच्या पूर्ततेचा आहे...</p>
+    <img src="images/ngo_cover2.jpg" alt="NGO Activities">
 </section>
 
 <section id="divisions">
     <h2>Divisions</h2>
 
     <h3>1. लुंबिनी</h3>
-    <p>शालेय विद्यार्थ्यांच्या व्यक्तिमत्व विकासासाठी व कलागुणांची ओळख करून देण्यासाठी कार्यरत विभाग...</p>
-    <img src="images/lumbini.jpg" alt="Lumbini Division">
+    <p>या विभागामार्फत शालेय विद्यार्थ्यांच्या व्यक्तिमत्व विकास आणि विविध कलागुणांची तोंडओळख करून देऊन त्यांचे विद्यार्थी जीवन समृद्ध व्हावे या करिता लुंबिनीचा हा अभिनव उपक्रम चालविण्यात येतो. सर्जनशीलतेचा आविष्कार विद्यार्थ्यांसोबत घडवून त्यांच्यातील सुप्त कलागुणांना वाव देण्याचा हा प्रयत्न आहे. लुंबिनीच्या कार्यशाळेत प्रत्येक सत्रात २०० ते २५० च्या आसपास विद्यार्थ्यांचा सहभाग असतो. लुंबिनीची संकल्पना व संयोजिका सौ. दिपाली विवेक मोरे यांची असून यामध्ये सौ. वैशाली सुनिल मोरे, आयु. कोमल श्रीकृष्ण पाखरे सन्माननीय सल्लागार म्हणून काम पाहतात. श्री. मिलिंद श्रीकृष्ण पाखरे हे या कार्यशाळेचे समन्वयक म्हणून काम करत आहेत.</p>
 
     <h3>2. कौशल्या - पर्यावरण संवर्धन अभियान</h3>
-    <p>पर्यावरणीय शिक्षण व संवर्धनासाठी कार्यरत...</p>
-    <img src="images/kaushalya.jpg" alt="Kaushalya Division">
+    <p>पर्यावरण संवर्धन व शिक्षणासाठी उभारलेले व्यासपीठ आहे. मा. विवेक मोरे अभियानाचे निमंत्रक आहेत. हवामान बदल आणि जागतिक तापमान वाढीची समस्या आज संपूर्ण जगाला भेडसावत आहे. त्याच्या दुष्परिणामांना महाराष्ट्राला सुद्धा सामोरे जावे लागणार आहे. या प्रकल्पामध्ये विद्यार्थ्यांद्वारे स्थानिक पातळीवर पर्यावरणीय उपाययोजना, वनसंपत्तीचे संवर्धन, वीज व पाण्याचा योग्य वापर, देशी बियाण्यांची बँक, नैसर्गिक स्थळांची क्षेत्रभेटी अशा विविध उपक्रम वर्षभर राबविण्यात येतात.</p>
 
     <h3>3. कृषी व सहकार व्यासपीठ</h3>
-    <p>सेंद्रिय शेती व सहकार विषयातील तज्ञ, शेतकरी व संबंधित व्यक्तींना एकत्र आणणे...</p>
-    <img src="images/krushi.jpg" alt="Krushi & Sahkar Division">
+    <p>सेंद्रिय शेती व सहकार विषयातील तज्ञ, शेतकरी आणि या क्षेत्राशी संबंधित व्यक्तींना एका व्यासपीठावर एकत्र आणून त्यांच्यात साधक-बाधक चर्चा घडवून सकारात्मक बदल घडवावा. विभागीय कार्यालय औरंगाबाद व मुख्य कार्यालय मांडवा येथे कार्यरत. आयु. विवेक मोरे या विभागाचे काम पाहतात. मार्गदर्शन आयु. संतोष लहाने, दैनंदिन कामकाजात अनिल मोरे, दयानंद मोरे, अविनाश मोरे यांच्या निरीक्षणात चालते. मुख्य मार्गदर्शक रोहीदास मोरे.</p>
 
     <h3>4. कायदेविषयक सहाय्य व सल्ला फोरम</h3>
-    <p>समाजातील गोरगरीब, दिनदुबळे व मागासवर्गीयांना मोफत कायदेविषयक सहाय्य व सल्ला...</p>
-    <img src="images/legal_forum.jpg" alt="Legal Aid Forum">
+    <p>समाजातील गोरगरीब, दिनदुबळे व मागासवर्गीय लोकांना त्यांच्या आर्थिक अडचणीमुळे किंवा मागासलेपणामुळे अन्याय सहन करण्याची वेळ येऊ नये यासाठी मोफत कायदेविषयक सहाय्य व सल्ला. अंदाजे ४० वकील व समाजसेवक कार्यरत. प्रमुख: अॅड. डॉ. दयानंद इंगळे, अॅड. ज्योती इंगळे, अॅड. विवेक मोरे.</p>
 
     <h3>5. माहिती व तंत्रज्ञान प्रबोधिनी</h3>
-    <p>संगणक व माहिती तंत्रज्ञान प्रशिक्षणासाठी स्थापन...</p>
-    <img src="images/it_prabodhini.jpg" alt="IT Prabodhini">
+    <p>संगणक व माहिती तंत्रज्ञान प्रशिक्षणासाठी स्थापन. अध्यक्ष: विवेक मोरे, सह-संचालक: आयु. कोमल पाखरे, मुख्य विपणन अधिकारी: सौ. दिपाली मोरे.</p>
 
     <h3>6. "रमाई" महिला व्यासपीठ</h3>
-    <p>महिलांच्या सर्वांगीण विकासासाठी कार्यरत...</p>
-    <img src="images/ramai.jpg" alt="Ramai Mahila Vyaspeeth">
+    <p>महिलांची शारीरिक, मानसिक, आर्थिक, सामाजिक, राजकीय विकासासाठी विविध उपक्रम व कार्यशाळा. संयोजिका: सौ. वैशाली मोरे, कार्यकारी संयोजिका: सौ. कोमल मोरे, सौ. मनिषा मोरे.</p>
 
     <h3>7. युवा अभियान</h3>
-    <p>युवकांच्या सामाजिक, सांस्कृतिक, आर्थिक, राजकीय विकासासाठी विविध कार्यक्रम...</p>
-    <img src="images/yuva_abhiyaan.jpg" alt="Yuva Abhiyan">
+    <p>युवकांच्या सर्वांगीण विकासासाठी विविध कार्यक्रम राबविणे. संयोजन: दयानंद मोरे, समन्वयक: विशाल मोरे, सहायक: प्रविण काळे.</p>
 
     <h3>8. अंतर्नाद सांस्कृतिक विभाग</h3>
-    <p>नाट्य, चित्रपट, गायन कार्यक्रम...</p>
-    <img src="images/antarnaad.jpg" alt="Antarnaad Cultural">
+    <p>नाट्य, चित्रपट, गायन इ. कार्यक्रम आयोजित. वार्षिक सभासद वर्गणी: पूर्ण वर्षासाठी १५००/-, वैयक्तिक १२९९/-, अपंगांसाठी ५००/-.</p>
 
     <h3>9. नालंदा राष्ट्रीय ग्रंथालय</h3>
-    <p>वाचन व ज्ञान प्रसारासाठी स्थापना...</p>
-    <img src="images/nalanda_library.jpg" alt="Nalanda National Library">
+    <p>ज्ञान प्रसारासाठी ग्रंथालय, विज्ञान व तंत्रज्ञानाचा वेगवान विकास, स्थानिक व जागतिक पातळीवर सेवा.</p>
 
     <h3>10. तान्हाई सभागृह</h3>
-    <img src="images/tanhai.jpg" alt="Tanhai Sabhagrah">
+    <p>सभासद व सदस्यांसाठी कार्यक्रमांचे आयोजन.</p>
 
     <h3>11. फुले शाहू आंबेडकर शिक्षण विकास मंच</h3>
-    <p>गुणवत्तापूर्ण शिक्षणासाठी परिषद, कार्यशाळा...</p>
-    <img src="images/education_manch.jpg" alt="Shahu Ambedkar Education Manch">
+    <p>गुणवत्तापूर्ण शिक्षणासाठी परिषद, कार्यशाळा, चर्चासत्रे, दत्तक शाळा, प्रशिक्षण. मुख्य संयोजिका: सौ. दिपाली मोरे, सहकार्य: सौ. कोमल मोरे.</p>
 
     <h3>12. अपंग हक्क अभियान</h3>
-    <p>अपंगांच्या समस्या सोडविण्यासाठी मंच...</p>
-    <img src="images/divyang_hakk_abhiyaan.jpg" alt="Divyang Hakk Abhiyan">
-</section>
-
-<section id="campaigns">
-    <h2>Campaigns & Programs</h2>
-    <ul>
-        <li>वृक्षलागवड</li>
-        <li>रक्तदान शिबिरे</li>
-        <li>आरोग्य तपासणी शिबिर</li>
-        <li>लसीकरण</li>
-        <li>गरोदर मातांना सल्ला व मार्गदर्शन</li>
-        <li>Evolution of Science</li>
-        <li>संविधान परिचय वर्ग</li>
-        <li>कोरोना आणि विज्ञान तंत्रज्ञान प्रगती व भविष्य</li>
-        <li>स्त्रीयांसाठी सर्वांगीण आरोग्य तपासणी अभियान</li>
-        <li>अपंगांसाठी आवश्यक साधने मोफत उपलब्ध करणे</li>
-        <li>कौटुंबिक सल्ला व मार्गदर्शन केंद्र</li>
-    </ul>
+    <p>अपंगांच्या समस्यांचे समाधान, कृत्रिम अवयव व साधने मोफत उपलब्ध करणे. निमंत्रक: श्री. मिलिंद पाखरे, संयोजक: विवेक मोरे, संतोष लहाने.</p>
 </section>
 
 <section id="offices">
-    <h2>Offices & Facilities</h2>
+    <h2>Offices & Locations</h2>
     <p>विभागीय केंद्र: उस्मानपुरा, औरंगाबाद</p>
     <p>मुख्य कार्यालय: मांडवा, ता. लोणार, जि. बुलढाणा</p>
-    <ul>
-        <li>वृद्धांसाठी हक्काचे घर "तान्हाई"</li>
-        <li>अनाथांसाठी सावली "कौशल्या"</li>
-        <li>सेंद्रिय शेती मार्गदर्शन व प्रशिक्षण केंद्र</li>
-        <li>Dr. Babasaheb Ambedkar Research Institute of Pali & Buddhism - "Dharmachakra"</li>
-        <li>Ajanta caves</li>
-    </ul>
 </section>
 
 <section id="executive">
     <h2>Executive Committee</h2>
     <table>
-        <tr>
-            <th>अ.क्र.</th>
-            <th>सभासदांचे पूर्ण नाव</th>
-            <th>हुद्दा / पद</th>
-        </tr>
+        <tr><th>अ.क्र.</th><th>सभासदांचे पूर्ण नाव</th><th>हुद्दा / पद</th></tr>
         <tr><td>1</td><td>श्री. विवेक अंबादास मोरे</td><td>अध्यक्ष</td></tr>
         <tr><td>2</td><td>श्री. कोमल श्रीकृष्ण पाखरे</td><td>उपाध्यक्ष</td></tr>
         <tr><td>3</td><td>सौ. दिपाली विवेक मोरे</td><td>सचिव</td></tr>
@@ -219,7 +118,7 @@
 </section>
 
 <footer>
-    <p>© 2026 Vishwaratna Foundation | All Rights Reserved</p>
+    <p>© 2026 Vishwaratna Foundation | सर्व हक्क राखीव</p>
 </footer>
 
 </body>
