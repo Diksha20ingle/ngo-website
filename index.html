@@ -4,23 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishwaratna Foundation</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; margin:0; padding:0; background-color:#f9f9f9; color:#333; }
-        header { position:relative; text-align:center; color:white; }
-        .hero-slider { position: relative; overflow:hidden; max-height:400px; }
-        .slides { display:flex; width:300%; animation: slide 15s infinite; }
-        .slides img { width:100%; height:400px; object-fit:cover; }
-        @keyframes slide { 0% { transform: translateX(0); } 33% { transform: translateX(-100%); } 66% { transform: translateX(-200%); } 100% { transform: translateX(0); } }
-        nav { background-color: #0074cc; text-align:center; padding:0.5rem 0; }
-        nav a { color:white; margin:0 1rem; text-decoration:none; font-weight:bold; }
-        section { padding:2rem; max-width:1000px; margin:auto; }
-        h2 { color:#004aad; margin-top:2rem; }
-        ul { padding-left:1.5rem; }
-        img { max-width:100%; height:auto; margin:1rem 0; border-radius:10px; }
-        table { width:100%; border-collapse:collapse; margin-top:1rem; }
-        table, th, td { border:1px solid #ccc; }
-        th, td { padding:0.5rem; text-align:left; }
-        footer { background-color:#004aad; color:white; text-align:center; padding:1rem 0; margin-top:2rem; }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-slider {
+            position: relative;
+            overflow: hidden;
+            max-height: 400px;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 15s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        nav {
+            background-color: #0074cc;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #004aad;
+            margin-top: 2rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        .division img, .campaign img, .office img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -40,15 +107,15 @@
 <nav>
     <a href="#about">About</a>
     <a href="#divisions">Divisions</a>
+    <a href="#campaigns">Campaigns</a>
     <a href="#offices">Offices</a>
-    <a href="#executive">Executive</a>
+    <a href="#executive">Executive Committee</a>
 </nav>
 
 <section id="about">
     <h2>About Vishwaratna Foundation</h2>
-    <p>भारतीय राज्यघटनेचे शिल्पकार बोधीसत्व प.पू. डॉ. भीमराव रामजी आंबेडकर म्हणजे जागतिक मनाचा मानबिंदू, स्वतंत्र भारताचे पहिले कायदामंत्री...</p>
-    <p>६ डिसेंबर १९५६ रोजी मा. डॉ. बाबासाहेब आंबेडकर यांच्या मृत्यूनंतर आणि २८ डिसेंबर २००२ रोजी मांडवा येथे 'विश्वरत्न फाउंडेशन'ची स्थापना झाली.</p>
-    <p>विश्वरत्न फाउंडेशन हे धर्मनिरपेक्ष, पक्षनिरपेक्ष व्यासपीठ आहे जे सर्वसामान्य लोकांसाठी कार्यरत आहे...</p>
+    <p>भारतीय राज्यघटनेचे शिल्पकार बोधीसत्व प.पू. डॉ. भीमराव रामजी आंबेडकर म्हणजे जागतिक मनाचा मानबिंदू...</p>
+    <p>६ डिसेंबर १९५६ रोजी मा. डॉ. बाबासाहेब आंबेडकर यांच्या मृत्यूनंतर...</p>
     <img src="images/about_foundation.jpg" alt="Vishwaratna Foundation">
 </section>
 
@@ -56,11 +123,11 @@
     <h2>Divisions</h2>
 
     <h3>1. लुंबिनी</h3>
-    <p>शालेय विद्यार्थ्यांच्या व्यक्तिमत्व विकासासाठी व कलागुणांची ओळख करून देण्यासाठी लुंबिनी विभाग कार्यरत आहे...</p>
+    <p>शालेय विद्यार्थ्यांच्या व्यक्तिमत्व विकासासाठी व कलागुणांची ओळख करून देण्यासाठी कार्यरत विभाग...</p>
     <img src="images/lumbini.jpg" alt="Lumbini Division">
 
     <h3>2. कौशल्या - पर्यावरण संवर्धन अभियान</h3>
-    <p>पर्यावरणीय शिक्षण व संवर्धनासाठी कार्यरत व्यासपीठ...</p>
+    <p>पर्यावरणीय शिक्षण व संवर्धनासाठी कार्यरत...</p>
     <img src="images/kaushalya.jpg" alt="Kaushalya Division">
 
     <h3>3. कृषी व सहकार व्यासपीठ</h3>
@@ -84,35 +151,63 @@
     <img src="images/yuva_abhiyaan.jpg" alt="Yuva Abhiyan">
 
     <h3>8. अंतर्नाद सांस्कृतिक विभाग</h3>
-    <p>नाट्य, चित्रपट, गायन कार्यक्रम आयोजित...</p>
+    <p>नाट्य, चित्रपट, गायन कार्यक्रम...</p>
     <img src="images/antarnaad.jpg" alt="Antarnaad Cultural">
 
     <h3>9. नालंदा राष्ट्रीय ग्रंथालय</h3>
-    <p>ज्ञान प्रसारासाठी वाचक वर्गासाठी ग्रंथालय...</p>
+    <p>वाचन व ज्ञान प्रसारासाठी स्थापना...</p>
     <img src="images/nalanda_library.jpg" alt="Nalanda National Library">
 
     <h3>10. तान्हाई सभागृह</h3>
     <img src="images/tanhai.jpg" alt="Tanhai Sabhagrah">
 
     <h3>11. फुले शाहू आंबेडकर शिक्षण विकास मंच</h3>
-    <p>गुणवत्तापूर्ण शिक्षणासाठी परिषद, कार्यशाळा, चर्चासत्रे...</p>
+    <p>गुणवत्तापूर्ण शिक्षणासाठी परिषद, कार्यशाळा...</p>
     <img src="images/education_manch.jpg" alt="Shahu Ambedkar Education Manch">
 
     <h3>12. अपंग हक्क अभियान</h3>
-    <p>अपंगांच्या समस्यांचे समाधान आणि आवश्यक साधने मोफत उपलब्ध करणे...</p>
+    <p>अपंगांच्या समस्या सोडविण्यासाठी मंच...</p>
     <img src="images/divyang_hakk_abhiyaan.jpg" alt="Divyang Hakk Abhiyan">
+</section>
+
+<section id="campaigns">
+    <h2>Campaigns & Programs</h2>
+    <ul>
+        <li>वृक्षलागवड</li>
+        <li>रक्तदान शिबिरे</li>
+        <li>आरोग्य तपासणी शिबिर</li>
+        <li>लसीकरण</li>
+        <li>गरोदर मातांना सल्ला व मार्गदर्शन</li>
+        <li>Evolution of Science</li>
+        <li>संविधान परिचय वर्ग</li>
+        <li>कोरोना आणि विज्ञान तंत्रज्ञान प्रगती व भविष्य</li>
+        <li>स्त्रीयांसाठी सर्वांगीण आरोग्य तपासणी अभियान</li>
+        <li>अपंगांसाठी आवश्यक साधने मोफत उपलब्ध करणे</li>
+        <li>कौटुंबिक सल्ला व मार्गदर्शन केंद्र</li>
+    </ul>
 </section>
 
 <section id="offices">
     <h2>Offices & Facilities</h2>
     <p>विभागीय केंद्र: उस्मानपुरा, औरंगाबाद</p>
     <p>मुख्य कार्यालय: मांडवा, ता. लोणार, जि. बुलढाणा</p>
+    <ul>
+        <li>वृद्धांसाठी हक्काचे घर "तान्हाई"</li>
+        <li>अनाथांसाठी सावली "कौशल्या"</li>
+        <li>सेंद्रिय शेती मार्गदर्शन व प्रशिक्षण केंद्र</li>
+        <li>Dr. Babasaheb Ambedkar Research Institute of Pali & Buddhism - "Dharmachakra"</li>
+        <li>Ajanta caves</li>
+    </ul>
 </section>
 
 <section id="executive">
     <h2>Executive Committee</h2>
     <table>
-        <tr><th>अ.क्र.</th><th>सभासदांचे पूर्ण नाव</th><th>हुद्दा / पद</th></tr>
+        <tr>
+            <th>अ.क्र.</th>
+            <th>सभासदांचे पूर्ण नाव</th>
+            <th>हुद्दा / पद</th>
+        </tr>
         <tr><td>1</td><td>श्री. विवेक अंबादास मोरे</td><td>अध्यक्ष</td></tr>
         <tr><td>2</td><td>श्री. कोमल श्रीकृष्ण पाखरे</td><td>उपाध्यक्ष</td></tr>
         <tr><td>3</td><td>सौ. दिपाली विवेक मोरे</td><td>सचिव</td></tr>
