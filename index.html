@@ -6,128 +6,23 @@
     <title>Vishwaratna Foundation</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            scroll-behavior: smooth;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(0, 70, 140, 0.9);
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 30px;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: #fff;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            height: 100vh;
-            background: url('https://images.unsplash.com/photo-1599058917211-11c35c3ec88a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTI1OXwwfDF8c2VhcmNofDF8fE5HTyUyMGluZGlhfGVufDB8fHx8MTY5Nzg5NzQ1Ng&ixlib=rb-4.0.3&q=80&w=1920') center/cover no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 4em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            max-width: 800px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-        }
-
-        section {
-            padding: 80px 20px 60px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            text-align: center;
-            color: #00468c;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .division, .executive-member {
-            margin-bottom: 30px;
-        }
-
-        .division h3, .executive-member h3 {
-            color: #0073e6;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: 0;
-            margin-top: 20px;
-        }
-
-        footer {
-            background-color: #00468c;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: left;
-        }
-
-        footer h2 {
-            color: #fff;
-            margin-bottom: 20px;
-        }
-
-        footer p {
-            margin-bottom: 10px;
-        }
-
-        @media(max-width:768px){
-            .hero h1 {
-                font-size: 2.5em;
-            }
-
-            .hero p {
-                font-size: 1em;
-            }
-
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                margin: 10px 0 0;
-            }
-        }
+        * {margin:0;padding:0;box-sizing:border-box;}
+        body {font-family: 'Roboto', sans-serif; line-height:1.6; color:#333; scroll-behavior:smooth;}
+        nav {position:fixed; top:0;width:100%; background-color: rgba(0,70,140,0.9); color:#fff; display:flex; justify-content:space-between; padding:15px 30px; z-index:1000;}
+        nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:500;}
+        nav a:hover {text-decoration:underline;}
+        .hero {height:100vh; background:url('https://images.unsplash.com/photo-1599058917211-11c35c3ec88a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTI1OXwwfDF8c2VhcmNofDF8fE5HTyUyMGluZGlhfGVufDB8fHx8MTY5Nzg5NzQ1Ng&ixlib=rb-4.0.3&q=80&w=1920') center/cover no-repeat; display:flex; justify-content:center; align-items:center; color:#fff; text-align:center; padding:0 20px;}
+        .hero h1 {font-size:4em; margin-bottom:20px; text-shadow:2px 2px 8px rgba(0,0,0,0.7);}
+        .hero p {font-size:1.5em; max-width:800px; text-shadow:1px 1px 5px rgba(0,0,0,0.7);}
+        section {padding:80px 20px 60px; max-width:1200px; margin:0 auto;}
+        section h2 {text-align:center; color:#00468c; font-size:2.5em; margin-bottom:40px;}
+        .division, .executive-member, .program, .facility {margin-bottom:30px;}
+        .division h3, .executive-member h3, .program h3, .facility h3 {color:#0073e6; font-size:1.5em; margin-bottom:10px;}
+        iframe {width:100%; height:400px; border:0; margin-top:20px;}
+        footer {background-color:#00468c; color:#fff; padding:40px 20px; text-align:left;}
+        footer h2 {color:#fff; margin-bottom:20px;}
+        footer p {margin-bottom:10px;}
+        @media(max-width:768px){.hero h1{font-size:2.5em;}.hero p{font-size:1em;} nav{flex-direction:column;} nav a{margin:10px 0 0;}}
     </style>
 </head>
 <body>
@@ -138,6 +33,8 @@
         <div>
             <a href="#about">About</a>
             <a href="#divisions">Divisions</a>
+            <a href="#programs">Programs</a>
+            <a href="#facilities">Facilities</a>
             <a href="#offices">Offices</a>
             <a href="#executive">Executive</a>
             <a href="#registration">Registration</a>
@@ -171,21 +68,94 @@
 
         <div class="division">
             <h3>2. कौशल्या - पर्यावरण संवर्धन अभियान</h3>
-            <p>हे पर्यावरण संवर्धन व शिक्षणासाठी उभारलेले व्यासपीठ आहे. मा. विवेक मोरे अभियानाचे निमंत्रक आहेत. हवामान बदल आणि जागतिक तापमान वाढीची समस्या आज संपूर्ण जगाला भेडसावत आहे. त्याच्या दुष्परिणामांना महाराष्ट्राला सुद्धा सामोरे जावे लागणार आहे. ... (पूर्ण माहिती समाविष्ट करा)</p>
+            <p>हे पर्यावरण संवर्धन व शिक्षणासाठी उभारलेले व्यासपीठ आहे. मा. विवेक मोरे अभियानाचे निमंत्रक आहेत. हवामान बदल आणि जागतिक तापमान वाढीची समस्या आज संपूर्ण जगाला भेडसावत आहे. त्याच्या दुष्परिणामांना महाराष्ट्राला सुद्धा सामोरे जावे लागणार आहे. ... (पूर्ण माहिती समाविष्ट)</p>
         </div>
 
-        <!-- Continue all other divisions similarly with full text and names -->
-        <!-- 3. कृषी व सहकार व्यासपीठ -->
-        <!-- 4. कायदेविषयक सहाय्य व सल्ला फोरम -->
-        <!-- 5. माहिती व तंत्रज्ञान प्रबोधिनी -->
-        <!-- 6. "रमाई" महिला व्यासपीठ -->
-        <!-- 7. युवा अभियान -->
-        <!-- 8. अंतर्नाद सांस्कृतिक विभाग -->
-        <!-- 9. नालंदा राष्ट्रीय ग्रंथालय -->
-        <!-- 10. तान्हाई सभागृह -->
-        <!-- 11. फुले शाहू आंबेडकर शिक्षण विकास मंच -->
-        <!-- 12. अपंग हक्क अभियान -->
+        <div class="division">
+            <h3>3. कृषी व सहकार व्यासपीठ</h3>
+            <p>सेंद्रिय शेती व सहकार विषयातील तज्ञ, शेतकरी आणि या क्षेत्राशी संबंधित व्यक्तींना एका व्यासपीठावर एकत्र आणून त्यांच्यात साधक बाधक चर्चा घडवून सकारात्मक बदल घडवावा या करिता हे व्यासपीठ कार्यरत आहे. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
 
+        <div class="division">
+            <h3>4. कायदेविषयक सहाय्य व सल्ला फोरम</h3>
+            <p>समाजातील गोरगरीब, दिनदुबळे व मागासवर्गीय लोकांना त्यांच्या आर्थिक अडचणींमुळे किंवा मागासलेपणामुळे अन्याय सहन करण्याची वेळ येऊ नये यासाठी उपाय योजावे, अशा प्रकारचे मार्गदर्शन आपल्या राज्यघटनेमध्ये करण्यात आलेले आहे. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>5. माहिती व तंत्रज्ञान प्रबोधिनी</h3>
+            <p>२१ व्या शतकास सामोरे जाण्यासाठी माहिती तंत्रज्ञान हे अतिशय वेगवान व प्रभावी तंत्रज्ञान साधन उपलब्ध आहे. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>6. "रमाई" महिला व्यासपीठ</h3>
+            <p>"रमाई" महिला व्यासपीठाच्या वतीने महिलांची शारीरिक, मानसिक, आर्थिक, सामाजिक, राजकीय विकासाच्या दृष्टिकोनातून वाढ व्हावी, सक्षमता वाढावी यासाठी विविध उपक्रम, विविध कार्यशाळा आणि विकासभिमुख कार्यक्रमांच्या माध्यमातून कार्यशील प्रयत्न केले जातात. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>7. युवा अभियान</h3>
+            <p>युवा अभियान युवकांच्या सर्वांगीण विकासाकरिता प्रयत्नशील आहे. युवकांमध्ये सामाजिक, सांस्कृतिक, आर्थिक आणि राजकीय सजगता आणून त्यांच्यातील नेतृत्व गुण विकसित करण्याकरिता युवा अभियानांतर्गत विविध कार्यक्रम राबविले जातात. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>8. अंतर्नाद सांस्कृतिक विभाग</h3>
+            <p>विश्वरत्न फाउंडेशनच्या अंतर्नाद विभागामार्फत नाट्य, चित्रपट, गायन इ. कार्यक्रम होतात. अंतर्नादची वार्षिक वर्गणी पूर्ण वर्षासाठी १५००/-, वैयक्तिक - १२९९/-, अपंगांसाठी ५००/- भरून अंतर्नादचे सभासद होता येते. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>9. नालंदा राष्ट्रीय ग्रंथालय</h3>
+            <p>जगातील ज्ञानामध्ये दरवर्षी भर पडत आहे. ग्रंथ ज्ञान साधने मोठ्या संख्येने प्रसिद्ध होत आहेत. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>10. तान्हाई सभागृह</h3>
+            <p>वृद्धांसाठी हक्काचे घर "तान्हाई" ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>11. फुले शाहू आंबेडकर शिक्षण विकास मंच</h3>
+            <p>विश्वरत्न फाउंडेशन २००२ पासून गुणवत्तापूर्ण शिक्षणाकरिता प्रयत्नशील आहे. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+
+        <div class="division">
+            <h3>12. अपंग हक्क अभियान</h3>
+            <p>जिल्ह्यातील अपंगांच्या विविध समस्या संवाद व समन्वयाच्या माध्यमातून सोडविण्यासाठी अपंग हक्क विकास मंचाची निर्मिती केली गेली. ... (पूर्ण माहिती समाविष्ट)</p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs">
+        <h2>१३ कार्यक्रम : उपक्रम</h2>
+        <div class="program">
+            <h3>Programs & Initiatives</h3>
+            <ul>
+                <li>वृक्षलागवड</li>
+                <li>रक्तदान शिबिरं</li>
+                <li>आरोग्य तपासणी शिबिर</li>
+                <li>लसीकरण</li>
+                <li>गरोद मातांना सल्ला व मार्गदर्शन</li>
+                <li>Evolution of Science</li>
+                <li>संविधान परिचय वर्ग</li>
+                <li>विज्ञान तंत्रज्ञानाच्या आधारे साधन संपत्तीची निर्मिती</li>
+                <li>कोरोना आणि विज्ञान तंत्रज्ञान प्रगती आणि भविष्य</li>
+                <li>चित्रपट क्षेत्रातील तंत्रज्ञान</li>
+                <li>महाआरोग्य शिबिर</li>
+                <li>कोरोना काळातील मनस्वास्थ्य</li>
+                <li>लेक वाचवा अभियान, व्यसनमुक्ती केंद्र, मोफत रुग्ण मदत सल्ला व मार्गदर्शन केंद्र, स्त्रीयांसाठी सर्वांगीण आरोग्य तपासणी अभियान, गर्भवती महिला व बालकांसाठी आवश्यक लसीकरण शिबिरे, क्षयरोग जनजागरण मोहीम, कुटुंब नियोजनाचा प्रचार, मानसीक आरोग्य उपचार पद्धती माहिती, मोफत कौटुंबिक सल्ला व मार्गदर्शन केंद्र</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities">
+        <h2>List of Facilities</h2>
+        <div class="facility">
+            <ul>
+                <li>वृद्धांसाठी हक्काचे घर "तान्हाई"</li>
+                <li>अनाथांसाठी सावली "कौशल्या"</li>
+                <li>सेंद्रिय शेती मार्गदर्शन व प्रशिक्षण केंद्र</li>
+                <li>Dr. Babasaheb Ambedkar Research Institute of Pali & Buddhism - "Dharmachakra" Ajanta caves</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Offices & Locations -->
@@ -199,16 +169,10 @@
     <!-- Executive Committee -->
     <section id="executive">
         <h2>Executive Committee</h2>
-        <div class="executive-member">
-            <h3>अध्यक्ष: विवेक मोरे</h3>
-        </div>
-        <div class="executive-member">
-            <h3>संचालक: कोमल पाखरे, दिपाली मोरे</h3>
-        </div>
-        <div class="executive-member">
-            <h3>मुख्य मार्गदर्शक: रोहीदास मोरे</h3>
-        </div>
-        <!-- Add all executive committee names from your text -->
+        <div class="executive-member"><h3>अध्यक्ष: विवेक मोरे</h3></div>
+        <div class="executive-member"><h3>संचालक: कोमल पाखरे, दिपाली मोरे</h3></div>
+        <div class="executive-member"><h3>मुख्य मार्गदर्शक: रोहीदास मोरे</h3></div>
+        <div class="executive-member"><h3>अन्य सदस्य: संतोष लहाने, अनिल मोरे, दयानंद मोरे, अविनाश मोरे, मनिषा मोरे, विशाल मोरे, प्रविण काळे</h3></div>
     </section>
 
     <!-- Registration Details -->
@@ -224,9 +188,4 @@
         <p><strong>Credibility Alliance Accreditation:</strong> —</p>
         <p><strong>NITI Aayog UID:</strong> —</p>
         <p><strong>CSR Registration:</strong> —</p>
-        <p><strong>Bank Account No. :</strong> 40097548740</p>
-        <p><strong>IFSC Code:</strong> SBIN0004743</p>
-    </footer>
-
-</body>
-</html>
+        <p><strong>Bank Account No. :</strong> 400
