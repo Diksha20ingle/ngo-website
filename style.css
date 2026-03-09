@@ -1,19 +1,20 @@
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
+background:#f4f4f4;
+color:#333;
+}
+
+header{
+background:#0b6b5c;
+color:white;
+padding:15px 0;
 }
 
 .container{
 width:90%;
 max-width:1100px;
 margin:auto;
-padding:40px 0;
-}
-
-header{
-background:#00695c;
-color:white;
 }
 
 .header-flex{
@@ -24,49 +25,83 @@ align-items:center;
 
 nav{
 text-align:center;
-padding:10px;
-background:#004d40;
+margin-top:10px;
 }
 
 nav a{
 color:white;
-margin:10px;
+margin:0 15px;
 text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover{
+text-decoration:underline;
+}
+
 .hero{
-background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
-background-size:cover;
-background-position:center;
+background:url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c") center/cover;
 color:white;
 text-align:center;
 padding:120px 20px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+background:#ff9800;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#e68900;
+}
+
+section{
+padding:60px 0;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
+margin-top:30px;
 }
 
 .card{
 background:white;
-padding:20px;
-border-radius:8px;
+padding:30px;
 text-align:center;
-box-shadow:0 3px 8px rgba(0,0,0,0.2);
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 font-weight:bold;
 }
 
 .activities{
-line-height:2;
+margin-top:20px;
+}
+
+.activities li{
+margin:10px 0;
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:15px;
+margin-top:20px;
 }
 
 .gallery img{
@@ -74,15 +109,37 @@ width:100%;
 border-radius:8px;
 }
 
-.language button{
-margin-left:5px;
-padding:5px 10px;
+.form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+}
+
+.form input,
+.form textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.form button{
+background:#0b6b5c;
+color:white;
+border:none;
+padding:12px;
+border-radius:5px;
 cursor:pointer;
 }
 
+.form button:hover{
+background:#084c42;
+}
+
 footer{
-background:#333;
+background:#222;
 color:white;
 text-align:center;
 padding:20px;
+margin-top:40px;
 }
