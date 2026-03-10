@@ -1,199 +1,423 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishwaratna Foundation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {margin:0;padding:0;box-sizing:border-box;}
-        body {font-family: 'Roboto', sans-serif; line-height:1.6; color:#333; scroll-behavior:smooth;}
-        nav {position:fixed; top:0;width:100%; background-color: rgba(0,70,140,0.9); color:#fff; display:flex; justify-content:space-between; padding:15px 30px; z-index:1000;}
-        nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:500;}
-        nav a:hover {text-decoration:underline;}
-        .hero {height:100vh; background:url('https://images.unsplash.com/photo-1599058917211-11c35c3ec88a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTI1OXwwfDF8c2VhcmNofDF8fE5HTyUyMGluZGlhfGVufDB8fHx8MTY5Nzg5NzQ1Ng&ixlib=rb-4.0.3&q=80&w=1920') center/cover no-repeat; display:flex; justify-content:center; align-items:center; color:#fff; text-align:center; padding:0 20px;}
-        .hero h1 {font-size:4em; margin-bottom:20px; text-shadow:2px 2px 8px rgba(0,0,0,0.7);}
-        .hero p {font-size:1.5em; max-width:800px; text-shadow:1px 1px 5px rgba(0,0,0,0.7);}
-        section {padding:80px 20px 60px; max-width:1200px; margin:0 auto;}
-        section h2 {text-align:center; color:#00468c; font-size:2.5em; margin-bottom:40px;}
-        .division, .executive-member, .program, .facility {margin-bottom:30px;}
-        .division h3, .executive-member h3, .program h3, .facility h3 {color:#0073e6; font-size:1.5em; margin-bottom:10px;}
-        iframe {width:100%; height:400px; border:0; margin-top:20px;}
-        footer {background-color:#00468c; color:#fff; padding:40px 20px; text-align:left;}
-        footer h2 {color:#fff; margin-bottom:20px;}
-        footer p {margin-bottom:10px;}
-        @media(max-width:768px){.hero h1{font-size:2.5em;}.hero p{font-size:1em;} nav{flex-direction:column;} nav a{margin:10px 0 0;}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishwaratna Foundation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Roboto',sans-serif;
+line-height:1.6;
+color:#333;
+scroll-behavior:smooth;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,70,140,0.95);
+color:#fff;
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+z-index:1000;
+}
+
+nav a{
+color:#fff;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+nav button{
+margin-left:10px;
+padding:5px 10px;
+border:none;
+background:#fff;
+color:#00468c;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1599058917211-11c35c3ec88a') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:4em;
+color:#ffd700;
+text-shadow:2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero p{
+font-size:1.5em;
+}
+
+section{
+padding:80px 20px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+color:#00468c;
+font-size:2.4em;
+margin-bottom:40px;
+}
+
+.division,.program,.facility,.executive-member{
+margin-bottom:30px;
+}
+
+.division h3{
+color:#0073e6;
+}
+
+iframe{
+width:100%;
+height:400px;
+border:0;
+margin-top:20px;
+}
+
+footer{
+background:#00468c;
+color:#fff;
+padding:40px 20px;
+}
+
+.lang{display:none;}
+
+@media(max-width:768px){
+
+.hero h1{font-size:2.5em;}
+.hero p{font-size:1em;}
+
+nav{flex-direction:column;}
+
+}
+
+</style>
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div><strong>Vishwaratna Foundation</strong></div>
-        <div>
-            <a href="#about">About</a>
-            <a href="#divisions">Divisions</a>
-            <a href="#programs">Programs</a>
-            <a href="#facilities">Facilities</a>
-            <a href="#offices">Offices</a>
-            <a href="#executive">Executive</a>
-            <a href="#registration">Registration</a>
-        </div>
-    </nav>
+<nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div>
-            <h1>Vishwaratna Foundation</h1>
-            <p>Empowering Communities, Enriching Lives</p>
-        </div>
-    </section>
+<div><strong>Vishwaratna Foundation</strong></div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Vishwaratna Foundation</h2>
-        <p>भारतीय राज्यघटनेचे शिल्पकार बोधीसत्व प.पू. डॉ. भीमराव रामजी आंबेडकर म्हणजे जागतिक मनाचा मानबिंदू, स्वतंत्र भारताचे पहिले कायदामंत्री, महिलांच्या हक्कासाठी मांडलेले हिंदू कोड बिल पास न झाल्यामुळे आपल्या मंत्री पदाचा राजीनामा दिला. भारतीय अर्थव्यवस्थेच्या विकासाचा पाया घालणारे, भारतामध्ये न्याय, समता, स्वातंत्र्य, बंधुता याचे जाळे विणणारे, संविधानाच्या माध्यमातून तळीगाळातील समाजाला त्याच्या मूलभूत हक्क आणि कर्तव्याचे लोकशाही मार्गाचे भान देणारे, हजारो वर्षांच्या पासून गुलामीचे जीवन जगणाऱ्या विशिष्ट वर्गाला, त्या गुलामीच्या जोखडातून मुक्त करणारे महामानव, समाज उद्धारक देशाच्या राजकारणात, समाजकारणात देखील जेव्हा, जेव्हा आर्थिक समस्या उद्भवली तेव्हा प्रत्येक वेळी स्थिती सक्षमपणे सांभाळून देशाच्या स्थैर्यात महत्त्वाची भूमिका निभावणारे आणि भारताचे जागतिक पातळीवर सर्वसामान्य जनतेचे प्रतिनिधित्व, नेतृत्व करणारे व राष्ट्रीय राजकारणाला नवी दिशा देणारे द्रष्टे नेते.</p>
-        <p>६ डिसेंबर १९५६ रोजी मा. डॉ. बाबासाहेब आंबेडकरांच्या मृत्यूनंतर (त्यांचे कार्य पूर्णत्वास नेण्यासाठी साहेबांचे अनुयायी सद्गद अंतकरणाने एकत्र आले. म्हणूनच डॉ. आंबेडकरांच्या मृत्यूनंतर ४६ वर्षांनी) आणि २८ डिसेंबर २००२ रोजी मांडवा येथे 'विश्वरत्न फाउंडेशन'ची स्थापना झाली.</p>
-        <p>विश्वरत्न फाउंडेशन हे धर्मनिरपेक्ष, पक्षनिरपेक्ष सामान्य लोकांनी सर्वसामान्य लोकांसाठी निर्माण केलेले व्यासपीठ आहे. महाराष्ट्रातील सर्वसामान्य, तळीगाळातील माणसाला सतावणान्या प्रश्नांचा खल करावा आणि त्या चर्चेतून निष्ठावंत कार्य करणारे (कार्यकर्ते) माणूस तयार व्हावे ही फाउंडेशनची भूमिका आहे. या राकट, कणखर दगडांच्या देशाचा स्वाभिमान देशातच नव्हे तर जागतिक पातळीवर सुद्धा अभंग रहावा हीच सर्वसामान्य माणसाची इच्छा आहे. विश्वरत्न फाउंडेशनचा दोन दशकांचा प्रवास हा या आकांक्षाच्या पूर्ततेचा आहे.</p>
-    </section>
+<div>
+<a href="#about">About</a>
+<a href="#divisions">Divisions</a>
+<a href="#programs">Programs</a>
+<a href="#facilities">Facilities</a>
+<a href="#offices">Offices</a>
+<a href="#executive">Executive</a>
+<a href="#registration">Registration</a>
 
-    <!-- Divisions Section -->
-    <section id="divisions">
-        <h2>Our Divisions</h2>
+<button onclick="setLang('mr')">मराठी</button>
+<button onclick="setLang('en')">English</button>
 
-        <div class="division">
-            <h3>1. लुंबिनी</h3>
-            <p>या विभागामार्फत शालेय विद्यार्थ्यांच्या व्यक्तिमत्व विकास आणि विविध कलागुणांची तोंडओळख करून देऊन त्यांचे विद्यार्थी जीवन समृद्ध व्हावे या करिता लुंबिनीचा हा अभिनव उपक्रम चालविण्यात येतो. सर्जनशीलतेचा आविष्कार विद्यार्थ्यांसोबत घडवून त्यांच्यातील सुप्त कलागुणांना वाव देण्याचा हा प्रयत्न आहे. लुंबिनीच्या कार्यशाळेत प्रत्येक सत्रात २०० ते २५० च्या आसपास विद्यार्थ्यांचा सहभाग असतो. लुंबिनीची संकल्पना व संयोजिका सौ. दिपाली विवेक मोरे यांची असून यामध्ये सौ. वैशाली सुनिल मोरे, आयु. कोमल श्रीकृष्ण पाखरे सन्माननीय सल्लागार म्हणून काम पाहतात. श्री. मिलिंद श्रीकृष्ण पाखरे हे या कार्यशाळेचे समन्वयक म्हणून काम करत आहेत.</p>
-        </div>
+</div>
 
-        <div class="division">
-            <h3>2. कौशल्या - पर्यावरण संवर्धन अभियान</h3>
-            <p>हे पर्यावरण संवर्धन व शिक्षणासाठी उभारलेले व्यासपीठ आहे. मा. विवेक मोरे अभियानाचे निमंत्रक आहेत. हवामान बदल आणि जागतिक तापमान वाढीची समस्या आज संपूर्ण जगाला भेडसावत आहे. त्याच्या दुष्परिणामांना महाराष्ट्राला सुद्धा सामोरे जावे लागणार आहे. म्हणून हवामान बदल आणि जागतिक तापमान वाढीची समस्या नीट समजावून घेण्यासाठी आणि त्याचा एकूणच पर्यावरण व मानवी जीवनावर होणारा परिणाम यावर शालेय विद्यार्थ्यांमध्ये जाणीव जागृती व्हावी या उद्देशाने हवामान बदल विषयक शिक्षण व कृती प्रकल्पांची आखणी करण्यात आली आहे. या प्रकल्पामध्ये विद्यार्थ्यांद्वारे स्थानिक पातळीवर वरील पर्यावरणीय उपाय योजना करण्यासाठी विद्यार्थी, शिक्षक आणि शाळांची तयारी करून घेणे. स्थानिक प्रजातींच्या वनसंपत्तीचे संवर्धन करणे, वीज पाण्याचा वापर योग्य प्रमाणात करणे, त्याचे ऑडिट करणे, देशी बियाण्यांची बँक स्थापन करणे, स्थानिक, बाग, जंगल, तलाव / किनारे अशा नैसर्गिक स्थळांच्या क्षेत्रभेटी आयोजित करणे, अशा विविध कार्यशील उपक्रम वर्षभर राबविण्यात येतात.</p>
-        </div>
+</nav>
 
-        <div class="division">
-            <h3>3. कृषी व सहकार व्यासपीठ</h3>
-            <p>सेंद्रिय शेती व सहकार विषयातील तज्ञ, शेतकरी आणि या क्षेत्राशी संबंधित व्यक्तींना एका व्यासपीठावर एकत्र आणून त्यांच्यात साधक बाधक चर्चा घडवून सकारात्मक बदल घडावा या करिता हे व्यासपीठ कार्यरत आहे. चर्चा मेळावे, व्याख्याने या व्यासपीठामार्फत आयोजित केले जातात. धोरणात्मक मुद्यांसोबतच सेंद्रिय शेती व सहकार संबंधी काम करत असताना येणाऱ्या अडचणी यांचा यात समावेश असतो. सेंद्रिय शेती व सहकार व्यासपीठाचे काम विभागीय कार्यालय औरंगाबाद व मुख्य कार्यालय मांडवा येथून चालते. आयु. विवेक मोरे या विभागाचे काम पाहतात. व्यासपीठाला आयु. संतोष लहाने यांचे वेळोवेळी मार्गदर्शन लाभते. दैनंदिन कामकाजात अनिल मोरे, दयानंद मोरे, अविनाश मोरे यांच्या निरीक्षणात सुरू आहे. मुख्य मार्गदर्शक रोहीदास मोरे.</p>
-        </div>
+<section class="hero">
 
-        <div class="division">
-            <h3>4. कायदेविषयक सहाय्य व सल्ला फोरम</h3>
-            <p>समाजातील गोरगरीब, दिनदुबळे व मागासवर्गीय लोकांना त्यांच्या आर्थिक अडचणींमुळे किंवा मागासलेपणामुळे अन्याय सहन करण्याची वेळ येऊ नये यासाठी उपाय योजावे, अशा प्रकारचे मार्गदर्शन आपल्या राज्यघटनेमध्ये करण्यात आलेले आहे. या तरतुदीला अनुसरून भारतीय संसदेने १९८७ मध्ये विधिसवा प्राधिकरण अधिनियम अंर्तभूत असलेली मोफत कायदेविषयक सहाय्य व सल्ला योजना राबविण्याचे काम विश्वरत्न फाउंडेशन मार्फत केले जाते. या योजनेची अंमलबजावणी करण्यासाठी फाउंडेशनने विश्वरत्न फाउंडेशन कायदेविषयक सहाय्य व सल्ला फोरम या विभागाची निर्मिती केली आहे. या विभागामध्ये अंदाजे ४० वकील व समाज सेवक काम करत असून ते आपली सेवा या योजनेसाठी देत आहेत. अॅड. डॉ. दयानंद इंगळे, अॅड. ज्योती इंगळे, अॅड. विवेक मोरे.</p>
-        </div>
+<div>
 
-        <div class="division">
-            <h3>5. माहिती व तंत्रज्ञान प्रबोधिनी</h3>
-            <p>२१ व्या शतकास सामोरे जाण्यासाठी माहिती तंत्रज्ञान हे अतिशय वेगवान व प्रभावी तंत्रज्ञान साधन उपलब्ध आहे. हे आता सर्वसामान्य झालेले आहे. संगणकाचा वापर सर्वच क्षेत्रात सुरु झालेला आहे. संगणकाच्या प्राथमिक वापरापासून ते इंटरनेट पर्यंतचे शिक्षण आपल्या गरजेप्रमाणे घेणे हे आधुनिक भारतात आवश्यक झाले आहे. नवीन तंत्रज्ञानाचा पूर्ण लाभ मिळविण्यासाठी आवश्यक ते तंत्रज्ञ तयार होणे ही आवश्यक आहे. या दृष्टीने फाउंडेशनचे अध्यक्ष विवेक मोरे यांनी विश्वरत्न समोर फाउंडेशनने "माहिती व तंत्रज्ञान प्रबोधिनी" स्थापन करून नवीन युवक युवतींना संगणक प्रशिक्षणाचा लाभ घेता यावा यासाठी काही अभ्यासक्रम सुरु करावे असा प्रस्ताव मांडला. या प्रबोधिनीचे काम फाउंडेशनचे आयु. कोमल पाखरे सह-संचालक व सौ. दिपाली मोरे मुख्य विपणन अधिकारी म्हणून कुशलतेने पाहत आहेत.
-               - दिक्षा इंगळे</p>
-        </div>
+<h1>Vishwaratna Foundation</h1>
 
-        <div class="division">
-            <h3>6. "रमाई" महिला व्यासपीठ</h3>
-            <p>"रमाई" महिला व्यासपीठाच्या वतीने महिलांची शारीरिक, मानसिक, आर्थिक, सामाजिक, राजकीय विकासाच्या दृष्टिकोनातून वाढ व्हावी, सक्षमता वाढावी यासाठी विविध उपक्रम, विविध कार्यशाळा आणि विकासभिमुख कार्यक्रमांच्या माध्यमातून कार्यशील प्रयत्न केले जातात. संयोजिका सौ. वैशाली मोरे, कार्यकारी संयोजिका सौ. कोमल मोरे, सौ. मनिषा मोरे रमाई महिला व्यासपीठाचे काम पाहतात.</p>
-        </div>
+<p>Empowering Communities, Enriching Lives</p>
 
-        <div class="division">
-            <h3>7. युवा अभियान</h3>
-            <p>युवा अभियान युवकांच्या सर्वांगीण विकासाकरिता प्रयत्नशील आहे. युवकांमध्ये सामाजिक, सांस्कृतिक, आर्थिक आणि राजकीय सजगता आणून त्यांच्यातील नेतृत्व गुण विकसित करण्याकरिता युवा अभियानांतर्गत विविध कार्यक्रम राबविले जातात. त्याच बरोबर विविध सामाजिक समस्यांवर युवा अभियान गेली दोन दशकांपासून कार्यरत आहे. युवा अभियानासोबत जिल्हाभरातून नवनवीन कार्यकर्ते जोडले जात आहेत. युवा अभियानाचे काम संयोजन दयानंद मोरे व समन्वयक - विशाल मोरे सहायक प्रविण काळे हे उत्साहाने करत आहेत.
-               - अनिल मोरे</p>
-        </div>
+</div>
 
-        <div class="division">
-            <h3>8. अंतर्नाद सांस्कृतिक विभाग</h3>
-            <p>विश्वरत्न फाउंडेशनच्या अंतर्नाद विभागामार्फत नाट्य, चित्रपट, गायन इ. कार्यक्रम होतात. अंतर्नादची वार्षिक वर्गणी पूर्ण वर्षासाठी १५००/-, वैयक्तिक - १२९९/-, अपंगांसाठी ५००/- भरून अंतर्नादचे सभासद होता येते. अंतर्नादच्या सभासदांना तसेच फाउंडेशनच्या सदस्यांना कार्यक्रमांचा आस्वाद घेता येतो. अंतर्नाद साठी सभासद नोंदणी सुरू आहे.</p>
-        </div>
+</section>
 
-        <div class="division">
-            <h3>9. नालंदा राष्ट्रीय ग्रंथालय</h3>
-            <p>जगातील ज्ञानामध्ये दरवर्षी भर पडत आहे. ग्रंथ ज्ञान साधने मोठ्या संख्येने प्रसिद्ध होत आहेत. ग्रंथालयातील वाचक वर्गाचे समाधान होण्यासाठी आपण तशा प्रकारच्या ग्रंथालयातून सेवा देत असतो. गेली वीस वर्षात विज्ञान आणि तंत्रज्ञानाने उत्तुंग अशी झेप घेतलेली आहे. या क्षेत्रात लक्षणीय असे परिवर्तन झालेले आहे. सध्याचे युग हे माहिती तंत्रज्ञानाचे आहे. तंत्रज्ञानाच्या झपाट्याने विकास होत आहे. सध्या सर्वच ग्रंथालये व माहिती केंद्रे स्थानिक प्रादेशिक व जागतिक पातळीवर स्थापन झाली आहेत. ती ज्ञान प्रसाराच्या क्षेत्रात महत्वाची भूमिका बजावत आहेत. शास्त्रीय व इतर संशोधनाचा वेगाने विकास होत आहे. त्यासाठी वाचक वर्गाच्या आग्रहास्तव नालंदा ग्रंथालयाची स्थापना करण्यात आली.</p>
-        </div>
+<!-- ABOUT -->
 
-        <div class="division">
-            <h3>10. तान्हाई सभागृह</h3>
-            <p>वृद्धांसाठी हक्काचे घर "तान्हाई" ... (पूर्ण माहिती समाविष्ट)</p>
-        </div>
+<section id="about">
 
-        <div class="division">
-            <h3>11. फुले शाहू आंबेडकर शिक्षण विकास मंच</h3>
-            <p>विश्वरत्न फाउंडेशन २००२ पासून गुणवत्तापूर्ण शिक्षणाकरिता प्रयत्नशील आहे. विविध महत्त्वाच्या विषयावर परिषद, कार्यशाळा, चर्चासत्रे, शिक्षण विषयक पुस्तकांचे प्रकाशन, उत्कृष्ट शैक्षणिक प्रयोग पुरस्कार, शिक्षक साहित्य संमेलन, राष्ट्रीय शिक्षण दिनाचे आयोजन, शैक्षणिक दृष्ट्या महत्त्वाच्या विषयावर होणारे शिक्षण कट्टा वरील चर्चा, दत्तक शाळा, शालेय शिक्षणाचा दर्जा उंचावण्यासाठी प्रशिक्षण अशा विविध पातळीवर हा मंच कार्यरत आहे. शिक्षण क्षेत्रात कार्यरत असणारे शिक्षक, संस्थाचालक, शासकीय अधिकारी, अभ्यासक, माध्यम प्रतिनिधी, पालक तसेच विद्यार्थी यांनी एकत्र येऊन साधक बाधक चर्चा करावी याकरिता विकास मंचाच्या स्थापनेपासून डॉ. जी. के. खरात, डॉ. माधवी भोसले, अतुल भालेराव, डॉ. दयानंद इंगळे यांचे मार्गदर्शन वेळोवेळी लाभत आहे. सौ. दिपाली मोरे फुले शाहू आंबेडकर शिक्षण विकास मंचाच्या मुख्य संयोजिका म्हणून कार्यरत आहेत. सोबत सौ. कोमल मोरे काम पाहतात.</p>
-        </div>
+<div class="lang mr">
 
-        <div class="division">
-            <h3>12. अपंग हक्क अभियान</h3>
-            <p>जिल्ह्यातील अपंगांच्या विविध समस्या संवाद व समन्वयाच्या माध्यमातून सोडविण्यासाठी अपंग हक्क विकास मंचाची निर्मिती केली गेली. मंचाचे निमंत्रक श्री मिलिंद पाखरे, संयोजक - विवेक मोरे, संतोष लहाने हे काम पाहतात. या मंचाच्या माध्यमातून जिल्ह्यामधील अपंगांच्या तपासणी शिबिरांचे आयोजन करून सर्व प्रवर्गमधील अपंगांना त्यांच्या आवश्यकतेनुसार कृत्रिम अवयव व साधनांसाठीचे मोजमाप घेऊन त्यांना कृत्रिम अवयव व साधने मोफत उपलब्ध करून देण्यासाठी लागेल ती मदत केली जाते. तसेच या मंचाच्या मार्फत प्रत्येक अपंगाला त्यांच्या अपंगत्वानुसार योग्य ती माहिती पुरवली जाते. तसेच अपंगांना लागेल ती मदत करण्याचा मंचाचा प्रयत्न असतो.
-               - विभागीय केंद्र :- उस्मानपुरा औरंगाबाद
-               - मुख्य कार्यालय :- मांडवा ता. लोणार, जि. बुलढाणा-</p>
-        </div>
-    </section>
+<h2>विश्वरत्न फाउंडेशन बद्दल</h2>
 
-    <!-- Programs Section -->
-    <section id="programs">
-        <h2> कार्यक्रम : उपक्रम</h2>
-        <div class="program">
-            <h3>Programs & Initiatives</h3>
-            <ul>
-                <li>वृक्षलागवड, रक्तदान शिबिरं, आरोग्य तपासणी शिबिर, लसीकरण, गरोद मातांना सल्ला व मार्गदर्शन, संविधान परिचय वर्ग, विज्ञान तंत्रज्ञानाच्या आधारे साधन संपत्तीची निर्मिती, कोरोना आणि विज्ञान तंत्रज्ञान प्रगती आणि भविष्य, चित्रपट क्षेत्रातील तंत्रज्ञान, महाआरोग्य शिबिर,कोरोना काळातील मनस्वास्थ्य</li>
-                
-                <li>1. लेक वाचवा अभियान</li>
-                </li>2. व्यसनमुक्ती केंद्र</li>
-                </li>3. मोफत रुग्ण मदत सल्ला व मार्गदर्शन केंद्र</li>
-                </li>4. स्त्रीयांसाठी सर्वांगीण आरोग्य तपासणी अभियान</li>
-                </li>5. गर्भवती महिला व बालकांसाठी आवश्यक लसीकरण शिबिरे</li>
-                </li>6. क्षयरोग जनजागरण मोहीम</li> 
-                </li>7. कुटुंब नियोजनाचा प्रचार</li>
-                </li>8. मानसीक आरोग्य उपचार पद्धती माहिती
-                </li>9. मोफत कौटुंबिक सल्ला व मार्गदर्शन केंद्र</li>
-            </ul>
-        </div>
-    </section>
+<p>भारतीय राज्यघटनेचे शिल्पकार बोधीसत्व प.पू. डॉ. भीमराव रामजी आंबेडकर म्हणजे जागतिक मनाचा मानबिंदू, स्वतंत्र भारताचे पहिले कायदामंत्री...</p>
 
-    <!-- Facilities Section -->
-    <section id="facilities">
-        <h2>List of Facilities</h2>
-        <div class="facility">
-            <ul>
-                <li>वृद्धांसाठी हक्काचे घर "तान्हाई"</li>
-                <li>अनाथांसाठी सावली "कौशल्या"</li>
-                <li>सेंद्रिय शेती मार्गदर्शन व प्रशिक्षण केंद्र</li>
-                <li>Dr. Babasaheb Ambedkar Research Institute of Pali & Buddhism - "Dharmachakra" Ajanta caves</li>
-            </ul>
-        </div>
-    </section>
+<p>६ डिसेंबर १९५६ रोजी मा. डॉ. बाबासाहेब आंबेडकरांच्या मृत्यूनंतर आणि २८ डिसेंबर २००२ रोजी मांडवा येथे 'विश्वरत्न फाउंडेशन'ची स्थापना झाली.</p>
 
-    <!-- Offices & Locations -->
-    <section id="offices">
-        <h2>Offices & Locations</h2>
-        <p><strong>मुख्य कार्यालय:</strong> मांडवा, ता. लोणार, जि. बुलढाणा</p>
-        <p><strong>विभागीय केंद्र:</strong> उस्मानपुरा, औरंगाबाद</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.345!2d76.361!3d19.973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5c1f2!2sMandwa%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1697897412345" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+<p>विश्वरत्न फाउंडेशन हे धर्मनिरपेक्ष, पक्षनिरपेक्ष सामान्य लोकांनी सर्वसामान्य लोकांसाठी निर्माण केलेले व्यासपीठ आहे.</p>
 
-    <!-- Executive Committee -->
-    <section id="executive">
-        <h2>Executive Committee</h2>
-        <div class="executive-member"><h3>अध्यक्ष: विवेक मोरे</h3></div>
-        <div class="executive-member"><h3>संचालक: कोमल पाखरे, दिपाली मोरे</h3></div>
-        <div class="executive-member"><h3>मुख्य मार्गदर्शक: रोहीदास मोरे</h3></div>
-        <div class="executive-member"><h3>अन्य सदस्य: संतोष लहाने, अनिल मोरे, दयानंद मोरे, अविनाश मोरे, मनिषा मोरे, विशाल मोरे, प्रविण काळे</h3></div>
-    </section>
+</div>
 
-    <!-- Registration Details -->
-    <footer id="registration">
-        <h2>Registration & Legal Details</h2>
-        <p><strong>Vishwaratna Foundation Mandwa</strong>, Tq. Lonar, Dist- Buldhana, 443302</p>
-        <p><strong>Society Registration Act-1860:</strong> MH/834/2012</p>
-        <p><strong>Bombay Public Trust Act-1950:</strong> F14503/2013</p>
-        <p><strong>FCRA Act - 1976:</strong> —</p>
-        <p><strong>Income Tax Act 1961 u/s 12(A):</strong> —</p>
-        <p><strong>Income Tax Act 1961 u/s 80G(5):</strong> —</p>
-        <p><strong>Income Tax PAN No. :</strong> AACAV6300M</p>
-        <p><strong>Credibility Alliance Accreditation:</strong> —</p>
-        <p><strong>NITI Aayog UID:</strong> —</p>
-        <p><strong>CSR Registration:</strong> —</p>
-        <p><strong>Bank Account No. :</strong> 40097548740</p>
-        <p><strong>IFSC Code:</strong> SBIN0004743</p>
-    </footer>
+<div class="lang en">
+
+<h2>About Vishwaratna Foundation</h2>
+
+<p>Dr. Bhimrao Ramji Ambedkar, the architect of the Indian Constitution, is a global symbol of justice, equality, liberty, and fraternity.</p>
+
+<p>After the passing of Dr. Babasaheb Ambedkar on 6 December 1956, his followers continued his vision. On 28 December 2002, Vishwaratna Foundation was established in Mandwa.</p>
+
+<p>Vishwaratna Foundation is a secular and non-political platform created by common people for the welfare of society.</p>
+
+</div>
+
+</section>
+
+<!-- DIVISIONS -->
+
+<section id="divisions">
+
+<div class="lang mr">
+<h2>विभाग</h2>
+</div>
+
+<div class="lang en">
+<h2>Divisions</h2>
+</div>
+
+<div class="division">
+
+<div class="lang mr">
+
+<h3>1. लुंबिनी</h3>
+<p>या विभागामार्फत शालेय विद्यार्थ्यांच्या व्यक्तिमत्व विकास आणि विविध कलागुणांची तोंडओळख करून देऊन त्यांचे विद्यार्थी जीवन समृद्ध व्हावे...</p>
+
+</div>
+
+<div class="lang en">
+
+<h3>1. Lumbini</h3>
+<p>This division works to develop the personality and creative abilities of school students through workshops and educational activities.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROGRAMS -->
+
+<section id="programs">
+
+<div class="lang mr">
+
+<h2>कार्यक्रम : उपक्रम</h2>
+
+<ul>
+
+<li>वृक्षलागवड, रक्तदान शिबिरं, आरोग्य तपासणी शिबिर...</li>
+
+<li>1. लेक वाचवा अभियान</li>
+<li>2. व्यसनमुक्ती केंद्र</li>
+<li>3. मोफत रुग्ण मदत सल्ला व मार्गदर्शन केंद्र</li>
+<li>4. स्त्रीयांसाठी सर्वांगीण आरोग्य तपासणी अभियान</li>
+<li>5. गर्भवती महिला व बालकांसाठी आवश्यक लसीकरण शिबिरे</li>
+<li>6. क्षयरोग जनजागरण मोहीम</li>
+<li>7. कुटुंब नियोजनाचा प्रचार</li>
+<li>8. मानसीक आरोग्य उपचार पद्धती माहिती</li>
+<li>9. मोफत कौटुंबिक सल्ला व मार्गदर्शन केंद्र</li>
+
+</ul>
+
+</div>
+
+<div class="lang en">
+
+<h2>Programs & Initiatives</h2>
+
+<ul>
+
+<li>Tree plantation, blood donation camps, health check-up camps, vaccination awareness programs.</li>
+
+<li>Save Girl Child Campaign</li>
+<li>De-addiction Centre</li>
+<li>Free patient assistance and counselling</li>
+<li>Women's complete health check-up campaigns</li>
+<li>Vaccination programs for pregnant women and children</li>
+<li>Tuberculosis awareness campaigns</li>
+<li>Family planning awareness</li>
+<li>Mental health awareness</li>
+<li>Free family counselling centre</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- FACILITIES -->
+
+<section id="facilities">
+
+<div class="lang mr">
+
+<h2>सुविधा</h2>
+
+<ul>
+
+<li>वृद्धांसाठी हक्काचे घर "तान्हाई"</li>
+<li>अनाथांसाठी सावली "कौशल्या"</li>
+<li>सेंद्रिय शेती मार्गदर्शन व प्रशिक्षण केंद्र</li>
+<li>Dr. Babasaheb Ambedkar Research Institute of Pali & Buddhism</li>
+
+</ul>
+
+</div>
+
+<div class="lang en">
+
+<h2>Facilities</h2>
+
+<ul>
+
+<li>Old age support home “Tanhai”</li>
+<li>Support shelter “Kaushalya” for orphans</li>
+<li>Organic farming guidance and training center</li>
+<li>Dr. Babasaheb Ambedkar Research Institute of Pali & Buddhism</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- OFFICES -->
+
+<section id="offices">
+
+<div class="lang mr">
+
+<h2>कार्यालय</h2>
+
+<p><strong>मुख्य कार्यालय:</strong> मांडवा, ता. लोणार, जि. बुलढाणा</p>
+
+<p><strong>विभागीय केंद्र:</strong> उस्मानपुरा, औरंगाबाद</p>
+
+</div>
+
+<div class="lang en">
+
+<h2>Offices & Locations</h2>
+
+<p><strong>Main Office:</strong> Mandwa, Tq. Lonar, Dist. Buldhana</p>
+
+<p><strong>Regional Office:</strong> Osmanpura, Aurangabad</p>
+
+</div>
+
+<iframe src="https://www.google.com/maps?q=Mandwa+Maharashtra&output=embed"></iframe>
+
+</section>
+
+<!-- EXECUTIVE -->
+
+<section id="executive">
+
+<div class="lang mr">
+
+<h2>कार्यकारिणी</h2>
+
+<p>अध्यक्ष: विवेक मोरे</p>
+<p>संचालक: कोमल पाखरे, दिपाली मोरे</p>
+<p>मुख्य मार्गदर्शक: रोहीदास मोरे</p>
+<p>सदस्य: संतोष लहाने, अनिल मोरे, दयानंद मोरे, अविनाश मोरे, मनिषा मोरे, विशाल मोरे, प्रविण काळे</p>
+
+</div>
+
+<div class="lang en">
+
+<h2>Executive Committee</h2>
+
+<p>President: Vivek More</p>
+<p>Directors: Komal Pakhare, Dipali More</p>
+<p>Chief Advisor: Rohidas More</p>
+<p>Members: Santosh Lahane, Anil More, Dayanand More, Avinash More, Manisha More, Vishal More, Pravin Kale</p>
+
+</div>
+
+</section>
+
+<!-- REGISTRATION -->
+
+<footer id="registration">
+
+<div class="lang mr">
+
+<h2>नोंदणी माहिती</h2>
+
+<p>Vishwaratna Foundation Mandwa, Tq. Lonar, Dist-Buldhana</p>
+
+<p>Society Registration Act-1860: MH/834/2012</p>
+
+<p>Bombay Public Trust Act-1950: F14503/2013</p>
+
+<p>PAN: AACAV6300M</p>
+
+<p>Bank Account: 40097548740</p>
+
+<p>IFSC: SBIN0004743</p>
+
+</div>
+
+<div class="lang en">
+
+<h2>Registration & Legal Details</h2>
+
+<p>Vishwaratna Foundation Mandwa, Tq. Lonar, Dist-Buldhana</p>
+
+<p>Society Registration Act-1860: MH/834/2012</p>
+
+<p>Bombay Public Trust Act-1950: F14503/2013</p>
+
+<p>PAN: AACAV6300M</p>
+
+<p>Bank Account: 40097548740</p>
+
+<p>IFSC: SBIN0004743</p>
+
+</div>
+
+</footer>
+
+<script>
+
+function setLang(lang){
+
+document.querySelectorAll('.lang').forEach(el=>{
+el.style.display='none'
+})
+
+document.querySelectorAll('.'+lang).forEach(el=>{
+el.style.display='block'
+})
+
+}
+
+setLang('mr')
+
+</script>
 
 </body>
 </html>
-        
