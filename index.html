@@ -32,6 +32,10 @@
         .executive-table th,.executive-table td{border:1px solid #ccc;padding:10px;text-align:left;}
         .executive-table th{background:#00468c;color:white;}
         .executive-table tr:nth-child(even){background:#f2f2f2;}
+        /* Chief Mentor Images */
+        .mentor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;margin-top:30px;text-align:center;}
+        .mentor-card{background:#f5f5f5;padding:15px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+        .mentor-card img{width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:10px;}
     </style>
     <script>
 function googleTranslateElementInit() {
@@ -210,17 +214,32 @@ function googleTranslateElementInit() {
     <!-- Chief Mentors Section-->
     <section id="chief-mentors">
         <h2>प्रमुख मार्गदर्शक</h2>
-        <div class="chief mentors">
-            <ul>
-                <li>1. डॉ. डी. के. खरात</li>
-                <li>2. डॉ. डी. आर. इंगळे</li>
-                <li>3. श्री. अतुल भोसेकर</li>
-                <li>4. डॉ. माधवी खरात</li>
-                <li>5. ॲड. ज्योती इंगळे</li>
-                <li>6. सौ. रंजना इंगळे</li>
-                <li>7. श्री. प्रकाश इंगळे</li>
-            </ul>
-        </div>
+        <div class="mentor-grid">
+            <div class="mentor-grid">
+                <img src="images/Dr D K Kharat.jpeg" alt="डॉ. डी. के. खरात">
+                <p>1. डॉ. डी. के. खरात</p>
+                </div>
+            
+            <div class="mentor-card">
+                <img src="images/Dr D R Ingle.jpg" alt="डॉ. डी. आर. इंगळे">
+                <p>2. डॉ. डी. आर. इंगळे</p>
+                </div>
+            
+            <div class="mentor-card">
+                <img src="images/atul.bhosekar.jpg" alt="श्री. अतुल भोसेकर">
+                <p>3. श्री. अतुल भोसेकर</p>
+                </div>
+
+            <div class="mentor-card">
+                <img src="images/Dr Madhavi Kharat.jpeg" alt="डॉ. माधवी खरात">
+                <p>4. डॉ. माधवी खरात</p>
+                </div>
+            
+            <div class="mentor-card">
+                <img src="images/Adv Jyoti Ingle.jpeg" alt="ॲड. ज्योती इंगळे">
+                <p>5. ॲड. ज्योती इंगळे</p>
+                </div>
+            </div>
     </section>
         
     <!-- Offices & Locations -->
